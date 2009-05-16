@@ -21,3 +21,5 @@ filetype indent on
 map MM :make
 map MK :make clean
 
+:au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
+
