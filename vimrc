@@ -5,13 +5,6 @@ set nohlsearch nocompatible bs=indent,eol,start ai ruler nowrap
 " read/write a .viminfo file, don't store more than 50 lines of registers
 set viminfo='20,\"50
 
-" Don't use Ex mode, use Q for formatting
-map Q gq
-
-" from http://dailyvim.blogspot.com/2009/03/tab-buffer-browsing.html
-nmap <tab> :bn<cr>
-nmap <s-tab> :bp<cr>
-
 filetype plugin on
 filetype indent on
 
@@ -23,5 +16,6 @@ au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
 au BufNewFile * silent! 0r ~/.vim/skel/tmpl.%:e
 
 source ~/.vim/guifont
+source ~/.vim/keys
 source ~/.vim/abbreviations
 
