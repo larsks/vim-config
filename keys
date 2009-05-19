@@ -1,0 +1,9 @@
+" Don't use Ex mode, use Q for formatting
+map Q gq
+map FF :set foldmethod=indent<cr>
+
+" from http://dailyvim.blogspot.com/2009/03/tab-buffer-browsing.html
+" use tab key to switch buffers in command mode
+nmap <tab> :bn<cr>
+nmap <s-tab> :bp<cr>
+
