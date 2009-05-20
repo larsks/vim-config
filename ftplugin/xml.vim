@@ -1,2 +1,4 @@
-map qx :%!tidy -xml 2> /dev/null<CR>
+map qx :%!tidy -i -xml 2> /dev/null<CR>
+
+source ~/.vim/scripts/closetag.vim
 
