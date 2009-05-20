@@ -1,6 +1,14 @@
 " Don't use Ex mode, use Q for formatting
 map Q gq
-map FF :set foldmethod=indent<cr>
+
+map <Leader>fi :set foldmethod=indent<cr>
+map <Leader>xt !xxd<cr>
+map <Leader>xf !xxd -r<cr>
+
+map <Leader>th :set guioptions-=T<cr>
+map <Leader>ts :set guioptions+=T<cr>
+map <Leader>mh :set guioptions-=m<cr>
+map <Leader>ms :set guioptions+=m<cr>
 
 " use tab key to switch tabs
 nmap <tab> gt<cr>

@@ -12,6 +12,8 @@ set
 	\ guioptions+=f
 	\ incsearch
 
+set guioptions-=T
+
 " read/write a .viminfo file, don't store more than 50 lines of registers
 set viminfo='20,\"50
 
